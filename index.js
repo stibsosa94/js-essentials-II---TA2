@@ -144,10 +144,11 @@
 //     name: 'Carol Smith',
 //     profile: {
 //       social: {
-//          twitter: 'carol.smith'
+//          twitter: 'carol.smith',
 //          facebook: 'carol.smith77'
 //      }
-//   };
+//    }
+//};
 
 // const user2 = {
 //     id: 2,
@@ -155,7 +156,7 @@
 //     profile: {
 //       email: 'jane.smith@example.com'
 //     }
-//   };
+//};
 
 //   showUserProfile(user1); // Expected output: 'carol.smith, carol.smith77'
 //   showUserProfile(user2); // Expected output: 'jane.smith@example.com'
@@ -164,16 +165,16 @@
 // The function should sort the players by score as it's displayed on the expected output
 
 // const leaderBoard = [
-//     { player: 'John', score: 80 },
-//     { player: 'Charlie', score: 20 }
-//     { player: 'Julio', score: 50 },
-//     { player: 'Bob', score: 80 },
-//     { player: 'Bobby', score: 11 }
-//     { player: 'Tommy', score: 43 },
-//     { player: 'Eric', score: 99 },
-//     { player: 'Alice', score: 100 },
-//     { player: 'Alfred', score: 30 }
-//   ];
+//   { player: "John", score: 80 },
+//   { player: "Charlie", score: 20 },
+//   { player: "Julio", score: 50 },
+//   { player: "Bob", score: 80 },
+//   { player: "Bobby", score: 11 },
+//   { player: "Tommy", score: 43 },
+//   { player: "Eric", score: 99 },
+//   { player: "Alice", score: 100 },
+//   { player: "Alfred", score: 30 },
+// ];
 
 // Expected output:
 // [
