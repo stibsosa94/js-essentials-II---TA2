@@ -3,21 +3,51 @@
 // 01 - Function
 // getTotal(inventory: [{article: '🍔', price: 15, quantity: '1'}, {article: '🍟', price: 10, quantity: '2'}])
 // it should return the total. for the example data 👆 it should be: 35. (15x1 + 10x2)
+const inventario = [{article: '🍔', price: 15, quantity: '1'}, {article: '🍟', price: 10, quantity: '2'}];
+const resultado = inventario.reduce((acumulador,e)=> {return acumulador + e.price * e.quantity},0);
+console.log("getTotal " + resultado);
+
 
 // 02 - Function
 // countBanana(inventory:['🥑','🍌','🥭', '🍌']})
+const frutas = ['🥑','🍌','🥭', '🍌'];
+function countBanana(frutas){
+    return frutas.filter(e=>e === '🍌').length
+}
+
+console.log("contarBananas " + countBanana(frutas));
+
+
 
 // 03- Function
-//   const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //   console.log(filterEvenNumbers(numbers)); // Output: [2, 4, 6, 8, 10]
 
+function filterEvenNumbers (numbers){
+    return numbers.filter(e=> e%2 ===0 );
+}
+console.log("filtra pares " + filterEvenNumbers(numbers));
+
 // 04 - function
-//   const numbers = [1, 2, 3, 4, 5];
+const numeros = [1, 2, 3, 4, 5];
 //   console.log(squareNumbers(numbers)); // Output: [1, 4, 9, 16, 25]
+
+function squareNumbers (numbers){
+    return numbers.map(e=> e**2);
+}
+console.log("squareNumbers " + squareNumbers(numeros));
+
 
 // 05 - function
 //   const numbers = [1, 2, 3, 4, 5];
-//   console.log(findMax(numbers)); // Output: 5
+
+function findMax (numeros){
+    const ordenados = numeros.sort((a,b) => b-a);
+    return ordenados[0];
+}
+console.log("findMax " + findMax(numeros)); // Output: 5
+
+
 
 // 06 - function
 //   const people = [
@@ -27,6 +57,8 @@
 //     { name: "El Chengue", age: 49 }
 //   ];
 //   console.log(calculateAverageAge(people)); // Output: 32.5
+
+
 
 // 07 - function  combinedHobbies(persons)
 // Function to combine hobbies from all persons
@@ -137,6 +169,9 @@
 // Expected getGetUniqueGuestList(guestList)) ['Alice 🙆🏻‍♀️', 'Bob 🙍🏼', 'Charlie 👨🏼‍🚀', 'David 🤵🏿‍♂️']
 
 // 10 - function showUserProfiles(user)
+//IMPRIMIR LAS PROPIEDADES DE LOS USUARIOS 
+    //1.Usando OPTIONAL CHANING ?
+    //2.Usando "Metodos importantes con objetos" ==> Objetc.key()
 // User data
 
 // const user1 = {
